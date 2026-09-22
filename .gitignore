@@ -1,0 +1,21 @@
+# Environments and secrets
+.env
+.env.local
+__pycache__/
+*.pyc
+
+# Local generation outputs and media
+output_videos/
+batch_output/
+renders/
+*.mp4
+*.wav
+*.mp3
+*.m4a
+*.png
+*.jpg
+*.jpeg
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,67 @@
+[
+  {
+    "id": "green_slime_vee",
+    "episode": 1,
+    "title": "The Slime Arbitrage",
+    "hook": "POV: GARY VEE AS A GREEN SLIME MONSTER",
+    "target_model": "veo-3.1-generate-preview",
+    "aspect_ratio": "9:16",
+    "duration_seconds": 8,
+    "motion_prompt": "Cinematic vertical video close-up of this green slime monster actively speaking and shouting directly into the camera. His mouth opens wide, lips and jaw move dynamically to articulate words passionately, green slime bubbles and drips down his chin, his eyes blink and express intense enthusiasm, organic fluid facial motion, 8k cinematic creature video.",
+    "voice_script": "You think you can slide through life without grinding? Look at me! I am a toxic slime monster and I weave webs of success 24/7/365! Macro patience, micro hyper-drive! Wake up and get to work!",
+    "camera_direction": "Medium close-up push-in, visceral frontal perspective",
+    "lighting": "Pulsing neon bioluminescent green bounce mixed with harsh top fluorescent"
+  },
+  {
+    "id": "werewolf_vee",
+    "episode": 2,
+    "title": "Midnight Arbitrage Under Full Moon",
+    "hook": "POV: GARY VEE UNDER A FULL MOON",
+    "target_model": "veo-3.1-generate-preview",
+    "aspect_ratio": "9:16",
+    "duration_seconds": 8,
+    "motion_prompt": "Cinematic vertical video close-up of this werewolf character talking aggressively to the camera. His jaw and lips move to pronounce words with fangs showing, expressive brow furrowing, head nodding with passion, fur rustling in the night breeze under the full moon, cinematic horror movie lighting.",
+    "voice_script": "The full moon is up and while you're sleeping eight hours, I'm out in the woods hunting attention economy! Buy my trading cards before the dawn or get bitten by the hustle!",
+    "camera_direction": "Slight low-angle tracking with rapid micro-shakes on vocal accents",
+    "lighting": "Cold blue lunar backlight with harsh warm sodium rim on the face"
+  },
+  {
+    "id": "cyber_subway_vee",
+    "episode": 3,
+    "title": "Subway Surfer 900 MPH",
+    "hook": "POV: GARY VEE SURFING SUBWAYS AT 900 MPH",
+    "target_model": "veo-3.1-generate-preview",
+    "aspect_ratio": "9:16",
+    "duration_seconds": 8,
+    "motion_prompt": "Cinematic vertical video of this cybernetic cyborg character shouting and speaking aggressively while riding on top of a train. His mouth moves clearly to articulate speech, cyan LED circuits pulse along his face, neon HUD eye flashes, wind whips his hair as tunnel lights streak behind him, high energy futuristic motion.",
+    "voice_script": "Why are you sleeping at night when the metro never stops? Look at my neon chassis! I surf 900 mile an hour trains 29 hours a day! Hustle never sleeps, bro!",
+    "camera_direction": "Dutch angle high-speed streak, forward kinetic dolly",
+    "lighting": "Rapid alternating tunnel strobe and cyan cybernetic fiber optics"
+  },
+  {
+    "id": "vampire_vee",
+    "episode": 4,
+    "title": "Hustling Since 1742",
+    "hook": "POV: GARY VEE HAS BEEN HUSTLING SINCE 1742",
+    "target_model": "veo-3.1-generate-preview",
+    "aspect_ratio": "9:16",
+    "duration_seconds": 8,
+    "motion_prompt": "Cinematic vertical video close-up of this gothic vampire character speaking eloquently and aggressively. His mouth opens and closes articulately with sharp canines visible, expressive raised eyebrows, head tilting, dramatic candlelight flickering across his pale face, high quality cinematic horror.",
+    "voice_script": "Blood is out! Hustle is in! I have been working since 1742! If you don't stop procrastinating, I will suck the laziness right out of your veins! Tap the screen and execute!",
+    "camera_direction": "Slow intimate telephoto drift, hyper-locked eye-line",
+    "lighting": "Warm flickering candle key with deep velvet shadows"
+  },
+  {
+    "id": "spider_vee",
+    "episode": 5,
+    "title": "The Eight-Legged Matrix",
+    "hook": "POV: GARY VEE AS AN 8-LEGGED CYBORG",
+    "target_model": "veo-3.1-generate-preview",
+    "aspect_ratio": "9:16",
+    "duration_seconds": 8,
+    "motion_prompt": "Cinematic vertical video close-up of this mechanical spider cyborg shouting with intense motivation. His mouth moves rapidly in clear dialogue, robotic limbs twitch and adjust in the background, hydraulic pistons on his jaw flex as he speaks, flashing server lights reflecting in his eyes.",
+    "voice_script": "Look at my eight chrome legs! I spin hustle webs 180 hours a week! You want my success? You gotta crawl through the digital matrix 80 hours a day, bro!",
+    "camera_direction": "Multidirectional twitch-cam, mechanical pan",
+    "lighting": "Server-rack indicator LEDs (green/amber) bouncing off chrome titanium joints"
+  }
+]

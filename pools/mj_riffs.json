@@ -1,0 +1,27 @@
+[
+  {
+    "source_theme": "deep-indigo prism gallery space, pixel art CRT monitors",
+    "vqgan_clip_prompt": "a deep-indigo prism gallery space constructed from pixel art CRT monitors:2.8 | quiet blue atmosphere:1.0 | singular material:0.65 | clutter:-1.5",
+    "biggan_clip_prompt": "a deep-indigo prism gallery space constructed from pixel art CRT monitors, abstract, cinematic lighting"
+  },
+  {
+    "source_theme": "endless white void gallery space, glazed ceramic and transparent acrylic sculpture",
+    "vqgan_clip_prompt": "an immersive endless white void gallery space with a glazed ceramic and transparent acrylic sculpture:2.8 | quiet blue atmosphere:1.0 | singular material:0.65 | clutter:-1.5",
+    "biggan_clip_prompt": "an immersive endless white void gallery space with a glazed ceramic and transparent acrylic sculpture, abstract, cinematic lighting"
+  },
+  {
+    "source_theme": "stark white gallery space, Y2K flip phone melting into transparent acrylic",
+    "vqgan_clip_prompt": "a stark white gallery space with a massive skeuomorphic sculpture of a Y2K flip phone melting into transparent acrylic:2.8 | quiet blue atmosphere:1.0 | singular material:0.65 | clutter:-1.5",
+    "biggan_clip_prompt": "a stark white gallery space with a massive skeuomorphic sculpture of a Y2K flip phone melting into transparent acrylic, abstract, cinematic lighting"
+  },
+  {
+    "source_theme": "subterranean gallery space encased in a deep-indigo prism",
+    "vqgan_clip_prompt": "an immersive subterranean gallery space encased in a deep-indigo prism:2.8 | quiet blue atmosphere:1.0 | singular material:0.65 | clutter:-1.5",
+    "biggan_clip_prompt": "an immersive subterranean gallery space encased in a deep-indigo prism, abstract, cinematic lighting"
+  },
+  {
+    "source_theme": "Electric yellow, blacklight, crimson smokestack tentacles",
+    "vqgan_clip_prompt": "Electric yellow blacklight with crimson smokestack tentacles spiraling:2.8 | quiet blue atmosphere:1.0 | singular material:0.65 | clutter:-1.5",
+    "biggan_clip_prompt": "Electric yellow blacklight with crimson smokestack tentacles spiraling, abstract, cinematic lighting"
+  }
+]

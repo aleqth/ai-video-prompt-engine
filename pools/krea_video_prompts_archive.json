@@ -1,0 +1,64 @@
+{
+  "extracted_at": "2026-08-18T00:18:00EDT",
+  "source": "Krea AI Video Generator Workspace (krea.ai/video)",
+  "account": "winningredeemingbuff... (Max Tier)",
+  "sessions": [
+    {
+      "session_name": "Troll Meets Alien",
+      "model": "Kling 2.6",
+      "exact_prompt": "arms dangling from a cloud at sunset with the sun in the background then a figure with a l...",
+      "aspect_ratio": "16:9",
+      "resolution": "720p",
+      "duration_sec": 6,
+      "workflow_category": "Atmospheric Surrealism & Sequential Character Entrance"
+    },
+    {
+      "session_name": "Shapeshifter's Emotional Shift",
+      "models_used": ["Kling 3.0", "Seedance 2.0", "Runway Gen-4.5"],
+      "prompts": [
+        {
+          "prompt": "acting like a happy excited playing dog jumping side to side then catches the tossed float...",
+          "models": ["Kling 3.0", "Seedance 2.0", "Runway Gen-4.5"]
+        },
+        {
+          "prompt": "Make this character cry slowly and hold its face looking at a camera and seeming to give ...",
+          "models": ["Kling 3.0"]
+        }
+      ],
+      "workflow_category": "Metamorphic Character Emotion & Multimodal Model Benchmarking"
+    },
+    {
+      "session_name": "Dog Manager with P...",
+      "model": "Seedance 2.0",
+      "exact_prompt": "activate the image to have the dogs working",
+      "image_to_video": true,
+      "subject": "Warehouse loading bay with forklift and working dogs",
+      "workflow_category": "Image Activation & Physical Staging"
+    },
+    {
+      "session_name": "Melting Mascot",
+      "model": "Seedance 2.0 Fast",
+      "exact_prompt": "the silhouette reads like a corrupted mascot relic laughing melting fingers and rubber surfac...",
+      "subject": "Sculptural mascot relic next to bicycle in gallery room",
+      "workflow_category": "Material Breakdown, Decay & Corrupted Artifact Physics"
+    },
+    {
+      "session_name": "Maniacal Superman",
+      "model": "Seedance 2.0",
+      "exact_prompt": "brazilian shock wave graphic attacl, Goosebumps energy and blaziken residue...",
+      "workflow_category": "High-Velocity Combat Dynamics, Anime/Pokemon Particle FX & Horror Subversion"
+    },
+    {
+      "session_name": "Cow Overwhelmed ...",
+      "model": "Kling 3.0",
+      "exact_prompt": "make the cow be floating with the water and ensure that the lasers stay fixed but have the...",
+      "workflow_category": "Zero-Gravity Fluid Dynamics & Spatial Laser Constraints"
+    },
+    {
+      "session_name": "Alien Space Ship",
+      "model": "Wan 2.1",
+      "exact_prompt": "alien space ship floating in space",
+      "workflow_category": "Minimalist Sci-Fi Volumetric Lighting"
+    }
+  ]
+}
