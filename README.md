@@ -13,9 +13,9 @@ Every prompt pool is provided as a clean `.txt` file (**1 prompt per line**—re
 
 * **`midjourney_100_cooked_presets.txt`**: 100 curated sculptural neo-pop & institutional gallery prompts formatted with Midjourney presets (`--ar 4:5 --v 6.1` / `--chaos 100 --stylize 650 --profile ...`).
 * **`midjourney_100_cooked_clean.txt`**: The exact same 100 prompts stripped of all Midjourney flags—pure, evocative physical descriptions ready for **video models** (Kling, Veo, Runway, Luma, Sora).
-* **`midjourney_seed_bank_archive_394.txt`**: 394 authentic, raw seed bank prompts extracted directly from Alex's generative archive.
+* **`midjourney_seed_bank_archive_426.txt`**: 426 authentic, raw seed bank prompts extracted directly from Alex's generative archive.
 * **`midjourney_v3_cooked_100.json`**: Structured JSON containing all 100 cooked prompts with tags, anatomical distortions, lighting profiles, and camera finishes.
-* **`all_prompts_master_pool.txt`**: **1,456 unique prompts** compiled and deduplicated across all archives into a single master pool.
+* **`all_prompts_master_pool.txt`**: **1,665 unique prompts** compiled and deduplicated across all archives into a single master pool.
 * **`editorial_4k_campaign_100.txt`**: 100 high-fashion L0–L3 editorial prompts with museum-grade lighting and camera receipts.
 * **`krea_video_motion_prompts.txt`**: Dynamic video generation prompts designed for fluid camera motion and physical transformations.
 * **`web_batch_surreal_sculptures.txt`**: 80 kinetic sculpture, pop-surrealist installation, and tactile art prompts.
@@ -47,7 +47,7 @@ The core vocabulary engine that generates high-tension, physical art prompts:
 ### 3. `generators/` — Tools for Generating & Mutating Prompts
 
 * **`prompt_machine.html`**: Zero-dependency browser web app. Double-click to open in any browser:
-  * Contains the full **394-prompt seed bank** built right in.
+  * Contains the full **426-prompt seed bank** built right in.
   * Interactive sliders for Mutation, Structure, Chaos, Novelty, and Fragmentation.
   * Version presets: `v1` (clean classic), `v2` (alex voice), `v3` (cooked), `v4` (chaos).
   * 1-click prompt mutation, randomize grammar, and instant clipboard copy.

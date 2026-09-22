@@ -10,7 +10,7 @@
 If you make AI-generated video or images using prompt pools, this repo gives you:
 1. **The Exact Prompts:** Over 1,450+ curated, production-tested prompts in both structured `.json` and ready-to-copy `.txt` (1 prompt per line).
 2. **The Midjourney Cooked Suite:** Both parameter-rich Midjourney versions (`--ar 4:5 --v 6.1 --chaos 100 --stylize 650`) and **clean plain-text versions** stripped of flags so they can be dropped straight into video models (Kling, Veo, Runway, Luma, Sora).
-3. **The Raw Seed Bank:** 394 authentic seed prompts directly from Alex's generative archive.
+3. **The Raw Seed Bank:** 426 authentic seed prompts directly from Alex's generative archive.
 4. **All the Words:** Complete dictionaries and word banks (`beings`, `materials`, `distortions`, `objects`, `environments`, `lighting`, `motion_verbs`, `camera_movements`) so you can combinatorially generate or mutate your own endless variations.
 5. **Interactive UI & CLI:** Open `generators/prompt_machine.html` in your browser for the full interactive visual mutator with sliders and seed banks, or use `generators/prompt_mutator.py` in your terminal.
 
@@ -26,10 +26,10 @@ ai-video-prompt-engine/
 ├── prompts/                                  # 1-per-line .txt files + .json datasets
 │   ├── midjourney_100_cooked_presets.txt     # 100 Midjourney prompts with full parameters & preset flags
 │   ├── midjourney_100_cooked_clean.txt       # 100 prompts CLEAN (pure visual text, zero flags—for video models)
-│   ├── midjourney_seed_bank_archive_394.txt  # 394 raw seed bank prompts from Alex's archive
-│   ├── midjourney_seed_bank_archive_394.json # 394 seed bank prompts in structured JSON
+│   ├── midjourney_seed_bank_archive_426.txt  # 426 raw seed bank prompts from Alex's archive
+│   ├── midjourney_seed_bank_archive_426.json # 426 seed bank prompts in structured JSON
 │   ├── midjourney_v3_cooked_100.json         # 100 cooked prompts with anatomy/material/lighting metadata
-│   ├── all_prompts_master_pool.txt           # 1,456 unique prompts compiled across all archives
+│   ├── all_prompts_master_pool.txt           # 1,665 unique prompts compiled across all archives
 │   ├── editorial_4k_campaign_100.txt         # 100 high-fashion L0–L3 editorial prompts
 │   ├── krea_video_motion_prompts.txt         # Kinetic video action and camera movement prompts
 │   ├── scary_vee_dialogue_and_scenes.txt     # Character scene prompts with voiceover lines
@@ -44,7 +44,7 @@ ai-video-prompt-engine/
 │   └── visual_families.json                  # 14 aesthetic universe definitions
 │
 ├── generators/                               # Tools for generating and mutating prompts
-│   ├── prompt_machine.html                   # Interactive browser UI (500KB with 394 seeds built-in)
+│   ├── prompt_machine.html                   # Interactive browser UI (500KB with 426 seeds built-in)
 │   └── prompt_mutator.py                     # Zero-dependency Python CLI generator/mutator/sampler
 │
 └── docs/                                     # Creative background and frameworks
@@ -67,8 +67,8 @@ Use `prompts/midjourney_100_cooked_clean.txt`:
 - All Midjourney parameter flags (`--ar`, `--v`, `--chaos`) have been stripped away.
 - What remains is the pure, evocative physical description—ideal as starting prompts for text-to-video or as descriptive prompts for image-to-video keyframe animation.
 
-### C. The 394-Prompt Seed Bank
-Use `prompts/midjourney_seed_bank_archive_394.txt`:
+### C. The 426-Prompt Seed Bank
+Use `prompts/midjourney_seed_bank_archive_426.txt`:
 - Raw, authentic prompts from Alex's personal generative history.
 - High variance, strange reaches, experimental pairings, and visual textures.
 
@@ -93,7 +93,7 @@ All words are categorized in `words_and_lexicons/lexicon_word_banks.json` and do
 ## 5. Instant Tools
 
 ### 1. Browser Web App (`generators/prompt_machine.html`)
-Double-click to open in any browser. It contains all 394 seeds loaded in memory, with mutation sliders, presets (`v1` classic, `v2` alex voice, `v3` cooked, `v4` chaos), and instant clipboard copy.
+Double-click to open in any browser. It contains all 426 seeds loaded in memory, with mutation sliders, presets (`v1` classic, `v2` alex voice, `v3` cooked, `v4` chaos), and instant clipboard copy.
 
 ### 2. Python CLI (`generators/prompt_mutator.py`)
 No `pip install` required—runs with Python standard library:
@@ -104,7 +104,7 @@ python generators/prompt_mutator.py generate -n 5 --video
 # Sample 3 random clean prompts from the Midjourney pool
 python generators/prompt_mutator.py sample -p midjourney_clean -n 3
 
-# Sample from the 1,456-prompt master pool
+# Sample from the 1,665-prompt master pool
 python generators/prompt_mutator.py sample -p all -n 5
 
 # Mutate any prompt using lexical synonyms
