@@ -1,0 +1,66 @@
+{
+  "cat": [
+    "rat",
+    "bat",
+    "fox",
+    "panther",
+    "otter"
+  ],
+  "skull": [
+    "head",
+    "death-mask",
+    "cranium",
+    "face-shell"
+  ],
+  "humanoid": [
+    "pseudo-figure",
+    "saint",
+    "warrior",
+    "creature",
+    "idol"
+  ],
+  "studio": [
+    "gallery",
+    "white room",
+    "cyclorama",
+    "institutional space"
+  ],
+  "fused": [
+    "merged",
+    "crossed",
+    "spliced",
+    "welded",
+    "contaminated"
+  ],
+  "laughing": [
+    "grinning",
+    "smirking",
+    "cackling",
+    "laughing maniacally"
+  ],
+  "pink": [
+    "purple",
+    "red",
+    "orange",
+    "chrome",
+    "blue"
+  ],
+  "dog": [
+    "bear",
+    "fox",
+    "shark",
+    "goose"
+  ],
+  "head": [
+    "skull",
+    "mask",
+    "face",
+    "cranium"
+  ],
+  "cloth": [
+    "fabric",
+    "sheet",
+    "veil",
+    "drape"
+  ]
+}

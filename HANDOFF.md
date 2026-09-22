@@ -1,118 +1,112 @@
-# COLLABORATOR HANDOFF: AI VIDEO & PROMPT GENERATION ENGINE
+# COLLABORATOR HANDOFF: WORDS, PROMPT POOLS & MIDJOURNEY ARCHIVE
 
-**Target Audience:** Creative Collaborators, AI Video Directors, Computational Artists  
-**Core Purpose:** Generating high-impact AI video content using structured prompt pools, programmatic prompt mutation machines, and multi-model video generation pipelines (Google Veo, Fal Kling, Seedance, Runway, Hedra).
-
----
-
-## 1. Executive Summary & Creative DNA
-
-This repository bridges **structured prompt generation data** with **high-velocity AI video execution**. Rather than prompting models with vague adjectives ("cinematic, hyper-detailed, masterpiece"), the system is built on:
-
-1. **The 4-Layer Physical Ontology (L0–L3):**
-   - **L0 Environment:** Mundane, specific real-world space with social use and tangible lighting.
-   - **L1 Configuration:** Exact physical staging of structural bodies, subjects, and objects in tension.
-   - **L2 Material Event:** Exactly **one** contained physical or kinetic impossibility (melting, folding, dripping, levitating).
-   - **L3 Optical Receipt:** Camera distance, lens focal length, lighting bounce, and photographic finish.
-2. **Seed Prompt Banks & Mutation Machines:** An extensive library of curated seed prompts that can be algorithmically mutated against lexicons of body parts, materials, distortions, animals, and pop-cultural residues.
-3. **Multi-Model Video Pipeline:** Direct integrations with Google Veo 3.1 / 2.0 (for vertical reels, native speech, and physical motion) and Fal Kling 1.6 / 3.0 Pro (for cinematic camera paths and fluid dynamics).
+**Target Audience:** Creative Collaborators, AI Video Creators, Computational Directors  
+**Core Deliverables:** Complete structured prompt pools, lexical word banks, 1-per-line prompt files for batch workflows, and the entire Midjourney Cooked & Seed Bank Suite.
 
 ---
 
-## 2. Tour of the Prompt Pools (`pools/`)
+## 1. Quick Orientation: How This Repo Works
 
-The repository includes several distinct, high-quality prompt datasets ready for video production:
-
-| Pool File | Count | Focus & Description |
-|---|---|---|
-| `pools/scary_vee_video_prompts.json` | 5 Episodes | **Vertical 9:16 reels** with motion prompts, voiceover scripts, camera moves, and lighting notes. |
-| `pools/midjourney_v3_cooked_100_prompts.json` | 100 Prompts | Curated sculptural neo-pop & kinetic character prompts with structural tags (`Anatomical Mutation -> Material Tension -> Gallery Light`). |
-| `pools/hermes_editorial_4k_campaign_plan.jsonl` | 100 Prompts | Production-ready L0–L3 editorial prompts featuring discovered real-world situations, material tension, and unglamorous crops. |
-| `pools/krea_video_prompts_archive.json` | 7 Workflows | Multi-model video prompts extracted across Kling 2.6/3.0, Seedance 2.0, Runway Gen-4.5, and Wan 2.1. |
-| `pools/web_batch_prompts.json` | 80 Prompts | Kinetic sculpture and physical object prompts blending classical art references with modern materials. |
-| `pools/web_batch_new_families.json` | 14 Families | Taxonomical grouping of themes, visual palettes, and artistic lineages. |
-| `pools/web_batch_semantic_swaps.json` | Dictionary | Structured synonym map for combinatorial replacement of subjects, armatures, and materials. |
+If you make AI-generated video or images using prompt pools, this repo gives you:
+1. **The Exact Prompts:** Over 1,450+ curated, production-tested prompts in both structured `.json` and ready-to-copy `.txt` (1 prompt per line).
+2. **The Midjourney Cooked Suite:** Both parameter-rich Midjourney versions (`--ar 4:5 --v 6.1 --chaos 100 --stylize 650`) and **clean plain-text versions** stripped of flags so they can be dropped straight into video models (Kling, Veo, Runway, Luma, Sora).
+3. **The Raw Seed Bank:** 394 authentic seed prompts directly from Alex's generative archive.
+4. **All the Words:** Complete dictionaries and word banks (`beings`, `materials`, `distortions`, `objects`, `environments`, `lighting`, `motion_verbs`, `camera_movements`) so you can combinatorially generate or mutate your own endless variations.
+5. **Interactive UI & CLI:** Open `generators/prompt_machine.html` in your browser for the full interactive visual mutator with sliders and seed banks, or use `generators/prompt_mutator.py` in your terminal.
 
 ---
 
-## 3. The Prompt Generation Engines (`generators/`)
-
-### A. `prompt_machine.html` (Interactive Web App)
-- **Zero-dependency, single-file HTML/JS app.**
-- Double-click to open in Chrome/Brave/Safari.
-- Features: Seed bank viewer, mutation sliders (mutation rate, structure depth, chaos), preset selectors, one-click prompt copying, and batch export.
-
-### B. `prompt_machine.py` (CLI Mutation Engine)
-- Python port of the mutation engine.
-- Takes Alex's core voice corpus and mutates against lexicons (`colors`, `beings`, `animals`, `distortions`, `materials`, `actions`, `environments`, `photo`, `style`).
-- Run `python generators/prompt_machine.py 10` to immediately generate 10 new prompts in terminal.
-
-### C. `prompt_pool_builder.py` (Pool Query & Slice Tool)
-- Command-line utility to query, sample, search, and export slices from across the prompt pools.
-- Examples:
-  - `python generators/prompt_pool_builder.py list`
-  - `python generators/prompt_pool_builder.py sample --pool midjourney --count 5`
-  - `python generators/prompt_pool_builder.py search "subway"`
-  - `python generators/prompt_pool_builder.py export --pool scary_vee --output batch.json`
-
----
-
-## 4. Video Generation & Animation Pipelines (`pipelines/`)
-
-### A. Google Veo Generator (`pipelines/veo_video_generator.py`)
-- Drives Google Veo 3.1 (`veo-3.1-generate-preview`) and Veo 2.0.
-- Supports both **Text-to-Video** and **Image-to-Video** (using an initial character still as frame 0).
-- Aspect ratios: `9:16` (vertical mobile), `16:9` (widescreen), `1:1` (square).
-- Durations: 4s, 5s, 8s.
-
-### B. Fal Kling Generator (`pipelines/fal_kling_video.py`)
-- Drives Kling 1.6 Pro / Kling 3.0 via Fal AI.
-- Automatically uploads local starting images to Fal S3, triggers generation, polls the job, and downloads the finalized MP4.
-
-### C. Character Lip-Sync Pipeline (`pipelines/fal_character_lipsync.py`)
-- **Hedra Character-2:** Input 1 Character Still + 1 Voiceover Audio file (`.wav`/`.mp3`) -> Fully articulated talking video.
-- **LatentSync:** Input 1 Existing Video + 1 Voiceover Audio file -> Warps facial mouth movements in the video to match audio.
-
-### D. Master Batch Runner (`pipelines/batch_video_runner.py`)
-- Iterates over any prompt pool and generates video clips into an output folder.
-- Supports `--model dry-run` to preview and validate prompt syntax without burning API credits.
-- Automatically outputs a `receipt_<timestamp>.json` logging every prompt, model response, and output file path.
-
----
-
-## 5. Recommended Production Workflow
+## 2. Directory Breakdown
 
 ```text
-[Step 1: Ideation & Mutation]
-  prompt_machine.html  OR  prompt_machine.py  OR  pools/*.json
-            │
-            ▼
-[Step 2: Pool Slicing & Validation]
-  prompt_pool_builder.py export --pool scary_vee --output my_run.json
-  batch_video_runner.py --pool my_run --model dry-run
-            │
-            ▼
-[Step 3: Keyframe Stills (Optional)]
-  Generate initial high-res character still (Gemini / Midjourney / Krea)
-            │
-            ▼
-[Step 4: AI Video Motion Generation]
-  veo_video_generator.py  OR  fal_kling_video.py  OR  batch_video_runner.py
-            │
-            ▼
-[Step 5: Voiceover & Lip Sync (Optional)]
-  fal_character_lipsync.py (Hedra / LatentSync)
-            │
-            ▼
-[Step 6: Final Reel Assembly]
-  Subtitles, caption burns, sound design, and export.
+ai-video-prompt-engine/
+├── HANDOFF.md                                # This collaborator guide
+├── README.md                                 # Quickstart & file index
+│
+├── prompts/                                  # 1-per-line .txt files + .json datasets
+│   ├── midjourney_100_cooked_presets.txt     # 100 Midjourney prompts with full parameters & preset flags
+│   ├── midjourney_100_cooked_clean.txt       # 100 prompts CLEAN (pure visual text, zero flags—for video models)
+│   ├── midjourney_seed_bank_archive_394.txt  # 394 raw seed bank prompts from Alex's archive
+│   ├── midjourney_seed_bank_archive_394.json # 394 seed bank prompts in structured JSON
+│   ├── midjourney_v3_cooked_100.json         # 100 cooked prompts with anatomy/material/lighting metadata
+│   ├── all_prompts_master_pool.txt           # 1,456 unique prompts compiled across all archives
+│   ├── editorial_4k_campaign_100.txt         # 100 high-fashion L0–L3 editorial prompts
+│   ├── krea_video_motion_prompts.txt         # Kinetic video action and camera movement prompts
+│   ├── scary_vee_dialogue_and_scenes.txt     # Character scene prompts with voiceover lines
+│   ├── web_batch_surreal_sculptures.txt      # 80 pop-surrealist installation and kinetic art prompts
+│   └── sonic_arcade_8bit_prompts.txt         # 2,100+ retro cyber arcade & pixel art prompts
+│
+├── words_and_lexicons/                       # Word banks, modifiers, and substitution trees
+│   ├── LEXICON_DICTIONARY.md                 # Full markdown vocabulary guide & prompt formula
+│   ├── lexicon_word_banks.json               # JSON dictionary of all word categories
+│   ├── synonym_maps.json                     # Lexical replacement map for prompt mutation
+│   ├── semantic_swaps.json                   # Thematic replacement clusters
+│   └── visual_families.json                  # 14 aesthetic universe definitions
+│
+├── generators/                               # Tools for generating and mutating prompts
+│   ├── prompt_machine.html                   # Interactive browser UI (500KB with 394 seeds built-in)
+│   └── prompt_mutator.py                     # Zero-dependency Python CLI generator/mutator/sampler
+│
+└── docs/                                     # Creative background and frameworks
+    ├── PROMPT_ARCHITECTURE_L0_L3.md          # 4-layer physical prompt framework
+    ├── SCARY_VEE_MULTIVERSE_BIBLE.md         # Multiverse characters and vocal DNA
+    └── VIDEO_MODEL_BENCHMARK_GUIDE.md        # Prompting behaviors across video models
 ```
 
 ---
 
-## 6. Setup & Getting Started
+## 3. How to Use the Midjourney Prompts
 
-1. Clone or copy the `ai-video-prompt-engine` folder to your workspace.
-2. Install requirements: `pip install -r requirements.txt`
-3. Configure your API keys in `.env` (copy from `.env.example`).
-4. Test everything in 5 seconds with `./examples/run_demo.sh`.
+### A. For Midjourney & Still Generation
+Use `prompts/midjourney_100_cooked_presets.txt`:
+- These contain Alex's signature preset flags (`--ar 4:5 --v 6.1` and `--chaos 100 --stylize 650 --profile...`).
+- Focuses on sculptural neo-pop figures, reversed anatomy, glossy fiberglass, and institutional gallery documentation.
+
+### B. For AI Video Models (Kling, Veo, Sora, Runway, Luma)
+Use `prompts/midjourney_100_cooked_clean.txt`:
+- All Midjourney parameter flags (`--ar`, `--v`, `--chaos`) have been stripped away.
+- What remains is the pure, evocative physical description—ideal as starting prompts for text-to-video or as descriptive prompts for image-to-video keyframe animation.
+
+### C. The 394-Prompt Seed Bank
+Use `prompts/midjourney_seed_bank_archive_394.txt`:
+- Raw, authentic prompts from Alex's personal generative history.
+- High variance, strange reaches, experimental pairings, and visual textures.
+
+---
+
+## 4. The Words & Lexicons: Building Endless Prompts
+
+All words are categorized in `words_and_lexicons/lexicon_word_banks.json` and documented in `words_and_lexicons/LEXICON_DICTIONARY.md`:
+
+- **Beings:** `humanoid`, `pseudo-figure`, `mascot cadaver`, `hybrid sculpture`, `robot body`...
+- **Distortions:** `reversed elbows`, `head turned backwards 180°`, `arms on opposite sides`, `wall-like torso`...
+- **Materials:** `pale silicone`, `glossy fiberglass`, `wet-look lilac lacquer`, `inflatable vinyl`, `chrome-plated skin`...
+- **Colors:** `candy-apple red`, `flesh-toned`, `SpongeBob yellow`, `matte black`, `Ronald McDonald red/white stripe`...
+- **Objects:** `dental rig`, `mechanical whisk`, `red scissors`, `balloon dog mask`, `chrome dental jaw`...
+- **Environments:** `cavernous brutalist gallery`, `white void studio`, `cyclorama background`, `polished aggregate floors`...
+- **Lighting & Documentation:** `Gagosian soft diffuse`, `cool museum halogen spots`, `35mm film`, `Sigmar Polke residue`...
+- **Video Motion Verbs:** `subtle breathing pulse`, `horizontal glitch jitter`, `surface tension rupture`, `continuous 360 rotation`...
+- **Camera Movements:** `slow cinematic dolly-in`, `low floor-level tilt-up`, `macro probe lens through cavity`...
+
+---
+
+## 5. Instant Tools
+
+### 1. Browser Web App (`generators/prompt_machine.html`)
+Double-click to open in any browser. It contains all 394 seeds loaded in memory, with mutation sliders, presets (`v1` classic, `v2` alex voice, `v3` cooked, `v4` chaos), and instant clipboard copy.
+
+### 2. Python CLI (`generators/prompt_mutator.py`)
+No `pip install` required—runs with Python standard library:
+```bash
+# Generate 5 fresh prompts with video camera movement & kinetic motion
+python generators/prompt_mutator.py generate -n 5 --video
+
+# Sample 3 random clean prompts from the Midjourney pool
+python generators/prompt_mutator.py sample -p midjourney_clean -n 3
+
+# Sample from the 1,456-prompt master pool
+python generators/prompt_mutator.py sample -p all -n 5
+
+# Mutate any prompt using lexical synonyms
+python generators/prompt_mutator.py mutate "pale silicone humanoid with reversed elbows in gallery"
+```
